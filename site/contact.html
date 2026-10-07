@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зерно & Пар — Контакты</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, "Times New Roman", serif; background: #f7f1e8; color: #3b2a20; line-height: 1.6; }
+    header { background: #3b2a20; color: #f7f1e8; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+    .logo span { color: #d4a373; }
+    nav a { color: #f7f1e8; text-decoration: none; margin-left: 24px; font-family: Arial, sans-serif; font-size: 15px; }
+    nav a:hover, nav a.active { color: #d4a373; }
+    .page-title { background: #8b5e3c; color: #f7f1e8; text-align: center; padding: 60px 20px; }
+    .page-title h1 { font-size: 40px; }
+    main { max-width: 1000px; margin: 0 auto; padding: 60px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .box { background: #fff; border-radius: 14px; padding: 30px; box-shadow: 0 4px 14px rgba(59,42,32,.08); border-top: 5px solid #d4a373; }
+    h2 { font-size: 26px; margin-bottom: 18px; }
+    .info p { margin-bottom: 14px; }
+    .info b { display: block; font-family: Arial, sans-serif; font-size: 13px; color: #8b5e3c; text-transform: uppercase; letter-spacing: 1px; }
+    .info a { color: #3b2a20; }
+    table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+    td { padding: 6px 0; border-bottom: 1px dashed #e0d2c2; }
+    td:last-child { text-align: right; }
+    label { display: block; font-family: Arial, sans-serif; font-size: 14px; margin: 12px 0 4px; }
+    input, textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #d8c6b3; border-radius: 8px; font-size: 15px; font-family: inherit; background: #fdfaf6; }
+    textarea { resize: vertical; min-height: 110px; }
+    button { margin-top: 18px; background: #d4a373; color: #3b2a20; border: none; padding: 12px 28px; border-radius: 30px; font-family: Arial, sans-serif; font-weight: bold; font-size: 15px; cursor: pointer; }
+    button:hover { background: #e9c49a; }
+    footer { background: #2a1d16; color: #c9b8a8; text-align: center; padding: 22px; font-family: Arial, sans-serif; font-size: 14px; }
+    footer a { color: #d4a373; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Зерно <span>&</span> Пар</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html" class="active">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <h1>Контакты</h1>
+  </section>
+
+  <main>
+    <div class="box info">
+      <h2>Как нас найти</h2>
+      <p><b>Адрес</b>ул. Кофейная, 12, г. Ароматск</p>
+      <p><b>Телефон</b><a href="tel:+70001234567">+7 (000) 123-45-67</a></p>
+      <p><b>Email</b><a href="mailto:hello@zerno-i-par.example">hello@zerno-i-par.example</a></p>
+      <p><b>Соцсети</b>@zerno_i_par</p>
+      <p><b>Часы работы</b></p>
+      <table>
+        <tr><td>Пн – Пт</td><td>08:00 – 21:00</td></tr>
+        <tr><td>Сб</td><td>09:00 – 22:00</td></tr>
+        <tr><td>Вс</td><td>10:00 – 20:00</td></tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <h2>Напишите нам</h2>
+      <form onsubmit="alert('Спасибо! Мы скоро ответим.'); return false;">
+        <label for="name">Имя</label>
+        <input type="text" id="name" placeholder="Как к вам обращаться?" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="topic">Тема</label>
+        <select id="topic">
+          <option>Вопрос о кофе</option>
+          <option>Школа бариста</option>
+          <option>Оптовые поставки зерна</option>
+          <option>Другое</option>
+        </select>
+
+        <label for="msg">Сообщение</label>
+        <textarea id="msg" placeholder="Ваше сообщение..."></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Зерно & Пар · <a href="index.html">Главная</a> · <a href="about.html">О нас</a>
+  </footer>
+
+</body>
+</html>

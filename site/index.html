@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зерно & Пар — Главная</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, "Times New Roman", serif; background: #f7f1e8; color: #3b2a20; line-height: 1.6; }
+    header { background: #3b2a20; color: #f7f1e8; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+    .logo span { color: #d4a373; }
+    nav a { color: #f7f1e8; text-decoration: none; margin-left: 24px; font-family: Arial, sans-serif; font-size: 15px; }
+    nav a:hover, nav a.active { color: #d4a373; }
+    .hero { background: linear-gradient(rgba(59,42,32,.75), rgba(59,42,32,.75)), #8b5e3c; color: #f7f1e8; text-align: center; padding: 90px 20px; }
+    .hero h1 { font-size: 46px; margin-bottom: 14px; }
+    .hero p { font-size: 19px; max-width: 620px; margin: 0 auto 26px; }
+    .btn { display: inline-block; background: #d4a373; color: #3b2a20; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; }
+    .btn:hover { background: #e9c49a; }
+    main { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+    h2 { text-align: center; font-size: 34px; margin-bottom: 10px; }
+    .subtitle { text-align: center; color: #7a5c48; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .card { background: #fff; border-radius: 14px; padding: 26px; box-shadow: 0 4px 14px rgba(59,42,32,.08); border-top: 5px solid #d4a373; }
+    .card .icon { font-size: 38px; }
+    .card h3 { margin: 10px 0 8px; font-size: 21px; }
+    .card p { font-size: 15px; color: #5a4436; }
+    .meta { margin-top: 12px; font-family: Arial, sans-serif; font-size: 13px; color: #8b5e3c; }
+    .tip { margin-top: 60px; background: #3b2a20; color: #f7f1e8; border-radius: 14px; padding: 34px; text-align: center; }
+    .tip h3 { color: #d4a373; margin-bottom: 10px; font-size: 24px; }
+    footer { background: #2a1d16; color: #c9b8a8; text-align: center; padding: 22px; font-family: Arial, sans-serif; font-size: 14px; }
+    footer a { color: #d4a373; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Зерно <span>&</span> Пар</div>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Кофе, сваренный с душой</h1>
+    <p>Обжариваем зерно сами и знаем, как раскрыть его вкус. Рассказываем о самых популярных способах приготовления кофе.</p>
+    <a href="#methods" class="btn">Способы заваривания</a>
+  </section>
+
+  <main id="methods">
+    <h2>Способы приготовления кофе</h2>
+    <p class="subtitle">Одно и то же зерно может звучать совершенно по-разному — всё зависит от метода</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">☕</div>
+        <h3>Эспрессо</h3>
+        <p>Горячая вода под давлением около 9 бар проходит через плотно утрамбованный молотый кофе. Получается густой, насыщенный напиток с пенкой — крема. Основа для капучино, латте и флэт уайта.</p>
+        <div class="meta">Помол: очень мелкий · Время: 25–30 сек</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🫖</div>
+        <h3>Френч-пресс</h3>
+        <p>Кофе настаивается в горячей воде, а затем гуща отделяется металлическим фильтром-поршнем. Вкус получается плотным, телесным, с маслянистой текстурой.</p>
+        <div class="meta">Помол: крупный · Время: 4 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Турка (джезва)</h3>
+        <p>Старейший способ: кофе варится в маленьком ковшике на огне или горячем песке. Напиток крепкий, ароматный, с осадком. Главное — не дать ему закипеть.</p>
+        <div class="meta">Помол: в пыль · Время: 3–5 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">💧</div>
+        <h3>Пуровер (V60)</h3>
+        <p>Горячую воду медленно льют тонкой струйкой через молотый кофе в бумажном фильтре. Чистый, лёгкий вкус, в котором хорошо слышны фруктовые и цветочные ноты.</p>
+        <div class="meta">Помол: средний · Время: 2,5–3 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧪</div>
+        <h3>Аэропресс</h3>
+        <p>Пластиковый «шприц», в котором кофе настаивается, а затем продавливается через фильтр. Компактный, быстрый и универсальный — любимец путешественников.</p>
+        <div class="meta">Помол: средне-мелкий · Время: 1,5–2 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">⛰️</div>
+        <h3>Гейзерная кофеварка</h3>
+        <p>Вода в нижней части нагревается и паром поднимается через кофе в верхнюю камеру. Напиток крепкий, близкий к эспрессо, — классика итальянских кухонь.</p>
+        <div class="meta">Помол: мелкий · Время: 5 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏺</div>
+        <h3>Кемекс</h3>
+        <p>Стеклянная колба в форме песочных часов с толстым бумажным фильтром. Похож на пуровер, но даёт ещё более чистый и мягкий вкус. Удобно варить сразу на компанию.</p>
+        <div class="meta">Помол: средне-крупный · Время: 4–5 мин</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧊</div>
+        <h3>Колд брю</h3>
+        <p>Холодное заваривание: кофе настаивается в холодной воде 12–18 часов. Получается мягкий, сладковатый напиток почти без горечи — идеален летом со льдом.</p>
+        <div class="meta">Помол: крупный · Время: 12–18 ч</div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <h3>Совет бариста</h3>
+      <p>Мелите кофе прямо перед заваркой и используйте воду 92–96 °C, а не крутой кипяток — так вкус будет ярче, а горечи меньше.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Зерно & Пар · <a href="about.html">О нас</a> · <a href="contact.html">Контакты</a>
+  </footer>
+
+</body>
+</html>

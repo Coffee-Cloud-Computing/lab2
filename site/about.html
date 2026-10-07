@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зерно & Пар — О нас</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, "Times New Roman", serif; background: #f7f1e8; color: #3b2a20; line-height: 1.6; }
+    header { background: #3b2a20; color: #f7f1e8; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+    .logo span { color: #d4a373; }
+    nav a { color: #f7f1e8; text-decoration: none; margin-left: 24px; font-family: Arial, sans-serif; font-size: 15px; }
+    nav a:hover, nav a.active { color: #d4a373; }
+    .page-title { background: #8b5e3c; color: #f7f1e8; text-align: center; padding: 60px 20px; }
+    .page-title h1 { font-size: 40px; }
+    main { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+    h2 { font-size: 30px; margin-bottom: 16px; }
+    .story p { margin-bottom: 14px; font-size: 17px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin: 50px 0; }
+    .stat { background: #3b2a20; color: #f7f1e8; border-radius: 14px; padding: 26px; text-align: center; }
+    .stat b { display: block; font-size: 36px; color: #d4a373; }
+    .stat span { font-family: Arial, sans-serif; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 20px; }
+    .card { background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 4px 14px rgba(59,42,32,.08); border-top: 5px solid #d4a373; }
+    .card h3 { margin-bottom: 6px; }
+    .card .role { font-family: Arial, sans-serif; font-size: 13px; color: #8b5e3c; margin-bottom: 10px; }
+    .card p { font-size: 15px; color: #5a4436; }
+    .values { margin-top: 50px; }
+    .values ul { list-style: none; }
+    .values li { background: #fff; margin-bottom: 12px; padding: 16px 20px; border-left: 5px solid #d4a373; border-radius: 8px; }
+    .cta { text-align: center; margin-top: 50px; }
+    .btn { display: inline-block; background: #d4a373; color: #3b2a20; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; }
+    .btn:hover { background: #e9c49a; }
+    footer { background: #2a1d16; color: #c9b8a8; text-align: center; padding: 22px; font-family: Arial, sans-serif; font-size: 14px; }
+    footer a { color: #d4a373; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Зерно <span>&</span> Пар</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html" class="active">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <h1>О компании</h1>
+  </section>
+
+  <main>
+    <section class="story">
+      <h2>Наша история</h2>
+      <p>«Зерно & Пар» появилась в 2018 году как маленькая кофейная стойка на шесть посадочных мест. Двое друзей-бариста решили, что хороший кофе не должен быть сложным и дорогим, — и начали варить его так, как любили сами.</p>
+      <p>Через два года мы запустили собственный обжарочный цех, а сегодня у нас три кофейни, школа бариста и поставки свежеобжаренного зерна в рестораны и офисы.</p>
+      <p>Мы работаем напрямую с фермерами из Эфиопии, Колумбии, Бразилии и Кении, чтобы знать, откуда пришло каждое зерно в вашей чашке.</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><b>2018</b><span>год основания</span></div>
+      <div class="stat"><b>3</b><span>кофейни в городе</span></div>
+      <div class="stat"><b>12</b><span>сортов зерна в меню</span></div>
+      <div class="stat"><b>500+</b><span>чашек кофе в день</span></div>
+    </section>
+
+    <section>
+      <h2>Наша команда</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Алексей Варенцов</h3>
+          <div class="role">Сооснователь, главный обжарщик</div>
+          <p>10 лет в кофе. Отвечает за профили обжарки и отбор зерна у фермеров.</p>
+        </div>
+        <div class="card">
+          <h3>Марина Соколова</h3>
+          <div class="role">Сооснователь, шеф-бариста</div>
+          <p>Призёр национального чемпионата бариста. Руководит нашей школой бариста.</p>
+        </div>
+        <div class="card">
+          <h3>Игорь Лебедев</h3>
+          <div class="role">Управляющий кофейнями</div>
+          <p>Следит, чтобы в каждой кофейне было уютно, а кофе — одинаково вкусным.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <h2>Во что мы верим</h2>
+      <ul>
+        <li><b>Свежесть.</b> Обжариваем зерно небольшими партиями каждую неделю.</li>
+        <li><b>Честность.</b> Прямые закупки и справедливая цена для фермеров.</li>
+        <li><b>Простота.</b> Объясняем, а не умничаем: расскажем, как сварить вкусный кофе дома.</li>
+      </ul>
+    </section>
+
+    <div class="cta">
+      <a href="contact.html" class="btn">Связаться с нами</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Зерно & Пар · <a href="index.html">Главная</a> · <a href="contact.html">Контакты</a>
+  </footer>
+
+</body>
+</html>
