@@ -1,4 +1,8 @@
 <?php
+
+/** @var string $title */
+/** @var string $content */
+// Page layout: header, flash messages, page content ($content), footer.
 // Page layout: header, flash messages, page content ($content), footer.
 // Variables: $title, $nav ('home' | 'wall' | 'notifications' | null), $content.
 
